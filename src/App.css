@@ -1,0 +1,133 @@
+.fields input, .shorturl,.getlink{
+  border:none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+  /* margin: 20px auto 25px; */
+  margin: 10px auto;
+  color: rgb(83, 83, 83);
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.1s;
+  background-color: rgb(234, 212, 253);
+  /* &:focus{
+    border: 3px solid rgb(14, 32, 172);
+  } */
+}
+.fields input,.shorturl{
+  &:focus{
+    border: 3px solid rgb(14, 32, 172);
+  }
+}
+.fields .shorturl{
+   background-color: white;
+   padding: 15px 0px 15px 20px;
+   font-weight: 600;
+   position: relative;
+   margin-top: 30px;
+   border: 1px solid ;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* Or set a fixed width like 300px if you prefer */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+   /* height: 50px;
+   overflow-y: hidden; */
+   /* overflow: hidden; */
+}
+.fields{
+    margin-top: 100px; 
+    background-color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    /* width: 80%; */
+    /* border: 1px solid; */
+}
+h4{
+  text-align: center;
+  color: white;
+}
+.getlink{
+  color: rgb(249, 249, 249);
+  background-color: rgb(58, 121, 71);
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  
+  &:hover{
+    background-color: rgba(61, 165, 63, 0.821);
+  }
+}
+a{
+  font-weight: 400;
+  text-decoration: none;
+  
+  
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  /* border: 1px solid; */
+
+}
+.alias_error{
+  margin: 0;
+  color: rgb(254, 3, 3);
+  text-align: center;
+}
+img{
+ 
+  height: 30px;
+  /* position: absolute;
+  right: 5px;
+  top: 0px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid; */
+}
+.copy_btn{
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  outline: none;
+  background-color: white;
+  transition: 0.1s;
+  padding: 4px;
+  /* border: 1px solid; */
+}
+.container{
+  /* border: 1px solid; */
+  width: 90%;
+  margin: 30px auto;
+  font-weight: 600;
+  
+}
+label{
+  color: rgb(155, 155, 155);
+}
+@media screen and (max-width:540px){
+  .fields{
+    width: 400px;
+  }
+}
+@media screen and (max-width:420px){
+  .fields{
+    max-width: 300px;
+    
+  }
+}
