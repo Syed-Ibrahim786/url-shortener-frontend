@@ -1,6 +1,6 @@
 Thank you for visting !😊
 
-#App Details
+# App Details
 
 [click here](https://github.com/Syed-Ibrahim786/url-shortener)
 
