@@ -60,7 +60,7 @@ const App = () => {
         <button className='getlink' onClick={getShortURL}>get link</button>
         <p className='shorturl' >
           shortURL : <a href={`${domain}/${shorturl}`} target="_blank">{`${domain}/${shorturl}`}</a>
-          <button style={copied?{outline:"3px solid green"}:{}} onClick={copyToClipboard} className='copy_btn'><img src={copy_image} alt="" /></button>
+          <button style={copied?{outline:"3px solid green"}:{}} onClick={copyToClipboard} className='copy_btn'><img src={copy_image} alt="copy URL" height="auto" width="auto"/></button>
         </p>
       </div>
       {/* <h4>Number of Clicks:</h4> */}
