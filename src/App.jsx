@@ -59,8 +59,8 @@ const App = () => {
         )}
         <button className='getlink' aria-label="click to get short url" onClick={getShortURL}>get link</button>
         <p className='shorturl' >
-          shortURL : <a  href={`${domain}/${shorturl}`} target="_blank" rel="noopener noreferrer" >{`${domain}${shorturl}`}</a>
-          <button aria-label="Copy short URL" style={copied?{outline:"3px solid green"}:{}} onClick={copyToClipboard} className='copy_btn'><img src={copy_image} alt="copy short URL" height="auto" width="auto"/></button>
+          shortURL : <a aria-label="click for redirection" href={`${domain}/${shorturl}`} target="_blank" rel="noopener noreferrer" >{`${domain}${shorturl}`}</a>
+          <button aria-label="Copy short URL" style={copied?{outline:"3px solid green"}:{}} onClick={copyToClipboard} className='copy_btn'><img src={copy_image} alt="copy short URL" height="30px" width="auto"/></button>
         </p>
       </div>
       {/* <h4>Number of Clicks:</h4> */}
