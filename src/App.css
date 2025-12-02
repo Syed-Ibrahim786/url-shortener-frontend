@@ -1,4 +1,4 @@
-.fields input, .shorturl,.getlink{
+/* .fields input, .shorturl,.getlink{
   border:none;
   outline: none;
   height: 50px;
@@ -6,16 +6,14 @@
   padding: 20px;
   border-radius: 10px;
   display: block;
-  /* margin: 20px auto 25px; */
+ 
   margin: 10px auto;
   color: rgb(29, 28, 28);
   font-weight: 600;
   font-size: 16px;
   transition: 0.1s;
   background-color: rgb(234, 212, 253);
-  /* &:focus{
-    border: 3px solid rgb(14, 32, 172);
-  } */
+  
 }
 .fields input,.shorturl{
   &:focus{
@@ -32,13 +30,11 @@
    white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%; /* Or set a fixed width like 300px if you prefer */
+  width: 100%; 
   display: flex;
   align-items: center;
   gap: 8px;
-   /* height: 50px;
-   overflow-y: hidden; */
-   /* overflow: hidden; */
+   
 }
 .fields{
     margin-top: 100px; 
@@ -48,8 +44,7 @@
     margin-right: auto;
     border-radius: 10px;
     padding-bottom: 10px;
-    /* width: 80%; */
-    /* border: 1px solid; */
+   
 }
 h4{
   text-align: center;
@@ -79,7 +74,7 @@ a{
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
-  /* border: 1px solid; */
+ 
 
 }
 .alias_error{
@@ -90,11 +85,7 @@ a{
 img{
  
   height: 30px;
-  /* position: absolute;
-  right: 5px;
-  top: 0px;
-  border-radius: 0 10px 10px 0;
-  border: 1px solid; */
+
 }
 .copy_btn{
   height: 100%;
@@ -108,10 +99,9 @@ img{
   background-color: white;
   transition: 0.1s;
   padding: 4px;
-  /* border: 1px solid; */
+  
 }
 .container{
-  /* border: 1px solid; */
   width: 90%;
   margin: 30px auto;
   font-weight: 600;
@@ -130,4 +120,4 @@ label{
     max-width: 300px;
     
   }
-}
+} */

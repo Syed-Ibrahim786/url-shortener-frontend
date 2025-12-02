@@ -13,12 +13,12 @@ import { Label } from "@/components/ui/label"
 
 export default function CardDemo() {
   return (
-    <main className=" w-full h-screen flex justify-center items-center">
+    <main className=" w-full h-screen  flex justify-center items-center">
 
-    <Card className="w-[90%] max-w-sm ">
+    <Card className="w-[90%] max-w-sm border-light">
       <CardHeader>
-        <CardTitle>Login to your account</CardTitle>
-        <CardDescription>
+        <CardTitle className="text-main">Login to your account</CardTitle>
+        <CardDescription className="text-muted">
           Enter your email below to login to your account
         </CardDescription>
         <CardAction>
@@ -29,9 +29,10 @@ export default function CardDemo() {
         <form>
           <div className="flex flex-col gap-6">
             <div className="grid gap-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email" className="text-accent">Email</Label>
               <Input
-                id="email"
+              className="border-1 border-light text-main"
+                id="newemail"
                 type="email"
                 placeholder="m@example.com"
                 required
@@ -39,15 +40,15 @@ export default function CardDemo() {
             </div>
             <div className="grid gap-2">
               <div className="flex items-center">
-                <Label htmlFor="password">Password</Label>
+                <Label className="text-accent" htmlFor="password">Password</Label>
                 <a
                   href="#"
-                  className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                  className="ml-auto inline-block text-sm text-primary underline-offset-4 hover:underline"
                 >
                   Forgot your password?
                 </a>
               </div>
-              <Input id="password" type="password" required />
+              <Input className="border-1 border-light text-main" id="newpassword" type="password" required />
             </div>
           </div>
         </form>

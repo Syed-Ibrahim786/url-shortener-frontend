@@ -6,8 +6,8 @@ import App from './App'
 const AppRoute = () => {
   return (
     <Routes>
-        <Route path='/login' element={<Login/>}/>
         <Route path='/' element={<App/>}/>
+        <Route path='/login' element={<Login/>}/>
     </Routes>
   )
 }

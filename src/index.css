@@ -6,12 +6,12 @@
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
 } */
-html,body{
+/* html,body{
     background: linear-gradient(to bottom right,rgb(255, 128, 0),blue); 
     background-repeat: no-repeat;
     height: 100vh;
      background-attachment: fixed;
-}
+} */
 
 @import "tailwindcss";
 
@@ -134,4 +134,60 @@ html,body{
     @apply bg-background text-foreground;
     }
 }
+/* ---------- BACKGROUNDS ---------- */
+.bg-main {
+  background-color: #0F172A;   /* Main dark background */
+}
+
+.bg-card {
+  background-color: #1E293B;   /* Card / container background */
+}
+
+/* ---------- TEXT COLORS ---------- */
+.text-main {
+  color: #F1F5F9;              /* Primary text */
+}
+
+.text-muted {
+  color: #94A3B8;              /* Secondary text */
+}
+
+.text-primary {
+  color: #3B82F6;              /* Primary Blue text */
+}
+
+.text-accent {
+  color: #38BDF8;              /* Accent Cyan text */
+}
+
+.text-link {
+  color: #60A5FA;              /* Link Blue */
+}
+
+/* ---------- BUTTON / ACCENT COLORS ---------- */
+.bg-primary {
+  background-color: #3B82F6;   /* Main Blue */
+}
+
+.bg-primary-light {
+  background-color: #60A5FA;   /* Lighter Blue */
+}
+
+.bg-accent {
+  background-color: #38BDF8;   /* Cyan */
+}
+
+.bg-accent-light {
+  background-color: #7DD3FC;   /* Light Cyan */
+}
+
+.bg-success {
+  background-color: #22C55E;   /* Success Green */
+}
+
+/* ---------- BORDERS ---------- */
+.border-light {
+  border-color: #334155;
+}
+
 
