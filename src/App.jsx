@@ -6,14 +6,22 @@ import axios from "axios";
 import { Copy } from "lucide-react";
 
 const App = () => {
+  const errors = {
+    EXIST_ALIAS : "ALias already exist, try other",
+    OFFLINE : "Internet is down",
+    NO : ""
+  }
   const longURL = useRef();
   const alias = useRef();
-  const [aliasError, setAliasError] = useState(false);
+  const [aliasError, setError] = useState(errors.NO);
   const [shorturl, setShorturl] = useState("");
   const [domain, setDomain] = useState("");
   const [copied, setCopied] = useState(false);
   const [status, setStatus] = useState("get Link");
+
+
   const getShortURL = async () => {
+    
     setStatus("loading...");
     try {
       const data = await axios.post(
@@ -28,9 +36,9 @@ const App = () => {
 
       setShorturl(data.data.shortURL);
       setDomain(data.data.domain);
-      setAliasError(false);
+      
     } catch (e) {
-      setAliasError(true);
+      setError(errors.EXIST_ALIAS,e);
     }
     setStatus("get Link");
   };
@@ -44,6 +52,15 @@ const App = () => {
       console.error("failed to copy", e);
     }
   };
+
+  const checkNetwork = () => {
+    console.log(window.navigator.onLine);
+    if(!window.navigator.onLine){
+      setError(errors.OFFLINE)
+      return false;
+    }
+    return true;
+  }
 
   return (
     <main className=" w-full h-screen  flex justify-center items-center">
@@ -80,7 +97,7 @@ const App = () => {
 
         <section className="">
           {aliasError && (
-            <p className=" text-red-400">alias already exist Try other one</p>
+            <p className=" text-red-400">{aliasError}</p>
           )}
 
           <button
@@ -90,7 +107,9 @@ const App = () => {
             type="submit"
             onClick={(e) => {
               e.preventDefault();
-              getShortURL();
+              if(checkNetwork()){
+                getShortURL();
+              }
             }}
           >
             {status}
