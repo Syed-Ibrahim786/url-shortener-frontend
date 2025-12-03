@@ -36,6 +36,7 @@ const App = () => {
 
       setShorturl(data.data.shortURL);
       setDomain(data.data.domain);
+      setError("")
       
     } catch (e) {
       setError(errors.EXIST_ALIAS,e);
